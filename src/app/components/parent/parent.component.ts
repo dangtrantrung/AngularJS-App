@@ -1,19 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 
 @Component({
   selector: 'app-parent',
   templateUrl: './parent.component.html',
-  styleUrls: ['./parent.component.css']
+  styleUrls: ['./parent.component.css'],
 })
-export class ParentComponent implements OnInit {
+export class ParentComponent {
+  // constructor() { }
 
-  constructor() { }
-
-  ngOnInit() {
+  // ngOnInit() {
+  // }
+  userName = 'Maria'
+  updateUser() {
+    this.userName = 'Chiris'
   }
-  userName='Maria'
-  updateUser(){
-    this.userName='Chiris'
-  }
-
 }

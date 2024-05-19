@@ -11,8 +11,8 @@ import {
   templateUrl: './child.component.html',
   styleUrls: ['./child.component.css'],
 })
-export class ChildComponent implements OnInit, OnChanges {
-  constructor() {}
+export class ChildComponent implements OnChanges {
+  // constructor() {}
   ngOnChanges(changes: SimpleChanges): void {
     // throw new Error('Method not implemented.')
     console.log('ngOnchanges triggered', changes)
@@ -26,6 +26,6 @@ export class ChildComponent implements OnInit, OnChanges {
     }
   }
 
-  ngOnInit() {}
+  // ngOnInit() {}
   @Input() userName = ''
 }
