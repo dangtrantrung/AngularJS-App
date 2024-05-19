@@ -5,7 +5,11 @@ import { Component, OnInit } from '@angular/core'
   templateUrl: './parent.component.html',
   styleUrls: ['./parent.component.css'],
 })
-export class ParentComponent {
+export class ParentComponent implements OnInit{
+  ngOnInit(): void {
+    // throw new Error('Method not implemented.')
+    console.log('OnInit parent component triggerred')
+  }
   // constructor() { }
 
   // ngOnInit() {

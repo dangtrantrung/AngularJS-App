@@ -1,5 +1,6 @@
 import {
   Component,
+  DoCheck,
   Input,
   OnChanges,
   OnInit,
@@ -11,8 +12,16 @@ import {
   templateUrl: './child.component.html',
   styleUrls: ['./child.component.css'],
 })
-export class ChildComponent implements OnChanges {
-  // constructor() {}
+export class ChildComponent implements OnChanges, OnInit, DoCheck {
+  ngOnInit(): void {
+    // throw new Error('Method not implemented.')
+    console.log('OnInit child component triggerred')
+  }
+  constructor() {}
+  ngDoCheck(): void {
+    // throw new Error('Method not implemented.')
+    console.log('doCheck triggered from child component')
+  }
   ngOnChanges(changes: SimpleChanges): void {
     // throw new Error('Method not implemented.')
     console.log('ngOnchanges triggered', changes)
@@ -27,5 +36,6 @@ export class ChildComponent implements OnChanges {
   }
 
   // ngOnInit() {}
+
   @Input() userName = ''
 }
