@@ -13,6 +13,10 @@ import {
   styleUrls: ['./parent.component.css'],
 })
 export class ParentComponent implements OnInit {
+  isChildDestroyed = false
+  destroy() {
+    this.isChildDestroyed = true
+  }
   ngOnInit(): void {
     // throw new Error('Method not implemented.')
     console.log('OnInit parent component triggerred')

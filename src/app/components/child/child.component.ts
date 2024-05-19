@@ -1,6 +1,7 @@
 import {
   AfterContentChecked,
   AfterContentInit,
+  AfterViewChecked,
   AfterViewInit,
   Component,
   ContentChild,
@@ -8,6 +9,7 @@ import {
   ElementRef,
   Input,
   OnChanges,
+  OnDestroy,
   OnInit,
   SimpleChanges,
   ViewChild,
@@ -25,34 +27,16 @@ export class ChildComponent
     DoCheck,
     AfterContentInit,
     AfterContentChecked,
-    AfterViewInit {
-  ngOnInit(): void {
-    // throw new Error('Method not implemented.')
-    console.log('OnInit child component triggerred')
-  }
+    AfterViewInit,
+    OnDestroy,
+    AfterViewChecked {
+  // ngOnInit() {}
   constructor() {}
-  ngAfterViewInit(): void {
-    // throw new Error('Method not implemented.')
-    console.log('AfterViewInit trigerred')
-  }
-  ngAfterContentChecked(): void {
-    // throw new Error('Method not implemented.')
-    console.log('AfterContentchecked trigerred')
-  }
-  ngAfterContentInit(): void {
-    // throw new Error('Method not implemented.')
-    console.log('ngaftercontetnInit-wrapper', this.wrapper)
-    console.log('ngaftercontetnInit-content wrapper', this.content)
-  }
+
+  @Input() userName = ''
   @ViewChild('wrapper') wrapper: ElementRef
   @ContentChild('contentWrapper') content: ElementRef
 
-  ngDoCheck(): void {
-    // throw new Error('Method not implemented.')
-    console.log(
-      'doCheck triggered from child component, not onchange triggered - reference object value but still Do check',
-    )
-  }
   ngOnChanges(changes: SimpleChanges): void {
     // throw new Error('Method not implemented.')
     console.log('ngOnchanges triggered', changes)
@@ -65,8 +49,37 @@ export class ChildComponent
       }
     }
   }
+  ngOnInit(): void {
+    // throw new Error('Method not implemented.')
+    console.log('OnInit child component triggerred')
+  }
+  ngDoCheck(): void {
+    // throw new Error('Method not implemented.')
+    console.log(
+      'doCheck triggered from child component, not onchange triggered - reference object value but still Do check',
+    )
+  }
+  ngAfterContentInit(): void {
+    // throw new Error('Method not implemented.')
+    console.log('ngaftercontetnInit-wrapper', this.wrapper)
+    console.log('ngaftercontetnInit-content wrapper', this.content)
+  }
 
-  // ngOnInit() {}
+  ngAfterContentChecked(): void {
+    // throw new Error('Method not implemented.')
+    console.log('AfterContentchecked trigerred')
+  }
+  ngAfterViewInit(): void {
+    // throw new Error('Method not implemented.')
+    console.log('AfterViewInit trigerred')
+  }
+  ngAfterViewChecked(): void {
+    // throw new Error('Method not implemented.')
+    console.log('AfterViewChecked trigerred')
+  }
 
-  @Input() userName = ''
+  ngOnDestroy(): void {
+    // throw new Error('Method not implemented.')
+    console.log('Child component is destroyed!')
+  }
 }
