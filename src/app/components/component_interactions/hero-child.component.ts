@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core'
-import { Hero } from './hero'
+import { InHero } from 'app/in-hero'
 
 @Component({
   selector: 'app-hero-child',
@@ -9,6 +9,6 @@ import { Hero } from './hero'
   `,
 })
 export class HeroChildComponent {
-  @Input() hero: Hero
+  @Input() hero: InHero
   @Input('master') masterName = ''
 }

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core'
-import { HEROES } from './hero'
+import { HEROES } from 'app/hero'
 
 @Component({
   selector: 'app-hero-parent',
