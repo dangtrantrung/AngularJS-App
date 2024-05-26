@@ -14,6 +14,9 @@ import { ViewNativeComponent } from './components/ViewEncapsulation_Native.compo
 import { HeroParentComponent } from './components/component_interactions/hero-parent.component'
 import { HeroChildComponent } from './components/component_interactions/hero-child.component'
 import { HomeComponent } from './components/home.component'
+import { NameParentComponent } from './components/component_interactions/name-parent.component'
+import { NameChildComponent } from './components/component_interactions/name-child.component'
+import { HousingLocationComponent } from './housinglocation.component'
 
 @NgModule({
   declarations: [
@@ -28,6 +31,9 @@ import { HomeComponent } from './components/home.component'
     HeroParentComponent,
     HeroChildComponent,
     HomeComponent,
+    NameParentComponent,
+    NameChildComponent,
+    HousingLocationComponent,
   ],
   imports: [BrowserModule, FormsModule, HttpModule],
   providers: [],
