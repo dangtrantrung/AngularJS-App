@@ -13,6 +13,7 @@ import { ViewNoneComponent } from './components/ViewEncapsulation_None.component
 import { ViewNativeComponent } from './components/ViewEncapsulation_Native.component'
 import { HeroParentComponent } from './components/component_interactions/hero-parent.component'
 import { HeroChildComponent } from './components/component_interactions/hero-child.component'
+import { HomeComponent } from './components/home.component'
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { HeroChildComponent } from './components/component_interactions/hero-chi
     ViewNativeComponent,
     HeroParentComponent,
     HeroChildComponent,
+    HomeComponent,
   ],
   imports: [BrowserModule, FormsModule, HttpModule],
   providers: [],
