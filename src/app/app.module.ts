@@ -11,6 +11,8 @@ import { ChildComponent } from './components/child/child.component'
 import { ViewEmulatedComponent } from './components/ViewEncapsulation_Emulated.component'
 import { ViewNoneComponent } from './components/ViewEncapsulation_None.component'
 import { ViewNativeComponent } from './components/ViewEncapsulation_Native.component'
+import { HeroParentComponent } from './components/component_interactions/hero-parent.component'
+import { HeroChildComponent } from './components/component_interactions/hero-child.component'
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { ViewNativeComponent } from './components/ViewEncapsulation_Native.compo
     ChildComponent,
     ViewEmulatedComponent,
     ViewNoneComponent,
-    ViewNativeComponent
+    ViewNativeComponent,
+    HeroParentComponent,
+    HeroChildComponent,
   ],
   imports: [BrowserModule, FormsModule, HttpModule],
   providers: [],
