@@ -17,6 +17,8 @@ import { HomeComponent } from './components/home.component'
 import { NameParentComponent } from './components/component_interactions/name-parent.component'
 import { NameChildComponent } from './components/component_interactions/name-child.component'
 import { HousingLocationComponent } from './housinglocation.component'
+import { VersionParentComponent } from './components/component_interactions/implement Onchanges/version-parent.component'
+import { VesrionChildComponent } from './components/component_interactions/implement Onchanges/version-child.component'
 
 @NgModule({
   declarations: [
@@ -34,6 +36,8 @@ import { HousingLocationComponent } from './housinglocation.component'
     NameParentComponent,
     NameChildComponent,
     HousingLocationComponent,
+    VersionParentComponent,
+    VesrionChildComponent,
   ],
   imports: [BrowserModule, FormsModule, HttpModule],
   providers: [],
