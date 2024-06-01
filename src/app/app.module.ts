@@ -21,6 +21,14 @@ import { VersionParentComponent } from './components/component_interactions/impl
 import { VesrionChildComponent } from './components/component_interactions/implement Onchanges/version-child.component'
 import { VoteTakerComponent } from './components/component_interactions/eventEmitter/vote-taker.component'
 import { VoterComponent } from './components/component_interactions/eventEmitter/voter.component'
+// import {
+//   CountdownLocalVarParentComponent,
+//   CountdownViewChildParentComponent,
+// } from './components/component_interactions/countdown_timer/countdown-parent.component'
+// import { CountdownTimerComponent } from './components/component_interactions/countdown_timer/countdown-timer.component'
+import { MissionControlComponent } from './components/component_interactions/observable service/missioncontrol.component'
+import { AstronautComponent } from './components/component_interactions/observable service/astronaut.component'
+import { MissionService } from './components/component_interactions/observable service/mission.service'
 
 @NgModule({
   declarations: [
@@ -42,6 +50,12 @@ import { VoterComponent } from './components/component_interactions/eventEmitter
     VesrionChildComponent,
     VoteTakerComponent,
     VoterComponent,
+    // CountdownTimerComponent,
+    // CountdownLocalVarParentComponent,
+    // CountdownViewChildParentComponent,
+    MissionControlComponent,
+    AstronautComponent,
+    MissionService,
   ],
   imports: [BrowserModule, FormsModule, HttpModule],
   providers: [],
