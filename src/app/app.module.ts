@@ -19,6 +19,8 @@ import { NameChildComponent } from './components/component_interactions/name-chi
 import { HousingLocationComponent } from './housinglocation.component'
 import { VersionParentComponent } from './components/component_interactions/implement Onchanges/version-parent.component'
 import { VesrionChildComponent } from './components/component_interactions/implement Onchanges/version-child.component'
+import { VoteTakerComponent } from './components/component_interactions/eventEmitter/vote-taker.component'
+import { VoterComponent } from './components/component_interactions/eventEmitter/voter.component'
 
 @NgModule({
   declarations: [
@@ -38,6 +40,8 @@ import { VesrionChildComponent } from './components/component_interactions/imple
     HousingLocationComponent,
     VersionParentComponent,
     VesrionChildComponent,
+    VoteTakerComponent,
+    VoterComponent,
   ],
   imports: [BrowserModule, FormsModule, HttpModule],
   providers: [],
