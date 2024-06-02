@@ -29,13 +29,18 @@ import { VoterComponent } from './components/component_interactions/eventEmitter
 // import { MissionControlComponent } from './components/component_interactions/observable service/missioncontrol.component'
 // import { AstronautComponent } from './components/component_interactions/observable service/astronaut.component'
 // import { MissionService } from './components/component_interactions/observable service/mission.service';
-import { ItemDetailComponent } from './item-detail/item-detail.component';
-import { ItemOutputComponent } from './item-output/item-output.component';
-import { ItemOutputParentComponent } from './item-output-parent/item-output-parent.component';
-import { InputOutputComponent } from './input-output/input-output.component';
-import { ZippyBasicComponent } from './zippy-basic/zippy-basic.component';
-import { ZippyMultislotComponent } from './zippy-multislot/zippy-multislot.component';
+import { ItemDetailComponent } from './item-detail/item-detail.component'
+import { ItemOutputComponent } from './item-output/item-output.component'
+import { ItemOutputParentComponent } from './item-output-parent/item-output-parent.component'
+import { InputOutputComponent } from './input-output/input-output.component'
+import { ZippyBasicComponent } from './zippy-basic/zippy-basic.component'
+import { ZippyMultislotComponent } from './zippy-multislot/zippy-multislot.component'
 import { ExampleZippyComponent } from './example-zippy/example-zippy.component'
+import { AdBannerComponent } from './dynamic-component-loader/ad-banner.component'
+import { HeroJobAdComponent } from './dynamic-component-loader/hero-job-ad.component'
+import { HeroProfileComponent } from './dynamic-component-loader/hero-profile.component'
+import { AdService } from './dynamic-component-loader/ad.service'
+import { AdDirective } from './dynamic-component-loader/ad.directive'
 
 @NgModule({
   declarations: [
@@ -70,9 +75,15 @@ import { ExampleZippyComponent } from './example-zippy/example-zippy.component'
     ZippyBasicComponent,
     ZippyMultislotComponent,
     ExampleZippyComponent,
+    AdBannerComponent,
+    HeroJobAdComponent,
+    HeroProfileComponent,
+    AdDirective,
   ],
   imports: [BrowserModule, FormsModule, HttpModule],
-  providers: [],
+  providers: [AdService],
+  // #docregion entry-components
+  entryComponents: [HeroJobAdComponent, HeroProfileComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
