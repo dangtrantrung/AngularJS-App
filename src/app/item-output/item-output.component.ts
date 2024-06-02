@@ -1,5 +1,4 @@
-import { Component, OnInit, Output } from '@angular/core'
-import { EventEmitter } from 'events'
+import { Component, OnInit, Output, EventEmitter } from '@angular/core'
 
 @Component({
   selector: 'app-item-output',
@@ -7,10 +6,11 @@ import { EventEmitter } from 'events'
   styleUrls: ['./item-output.component.css'],
 })
 export class ItemOutputComponent implements OnInit {
-  @Output() newItemEvent = new EventEmitter()
-  constructor() {}
+  ngOnInit(): void {
+    // throw new Error('Method not implemented.')
+  }
+  @Output() newItemEvent = new EventEmitter<string>()
 
-  ngOnInit() {}
   addNewItem(value: string) {
     this.newItemEvent.emit(value)
   }

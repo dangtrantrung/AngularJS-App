@@ -1,5 +1,4 @@
-<app-item-output (newItemEvent)="addItem($event)"></app-item-output>
-
 <ul>
-    <li *ngFor="let item of items">{{item}}</li>
+    <li *ngFor="let item of items">{{ item }}</li>
 </ul>
+<app-item-output (newItemEvent)="addItem($event)"></app-item-output>
