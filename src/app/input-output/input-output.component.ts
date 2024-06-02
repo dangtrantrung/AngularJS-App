@@ -13,7 +13,10 @@ export class InputOutputComponent implements OnInit {
   @Output() deleteRequest = new EventEmitter<string>()
   lineThrough = ''
   delete() {
-    console.warn('Child says: emitting item deleteRequest with', this.item)
+    console.warn(
+      'Child says: emitting item deleteRequest @Output from child to parent with item...',
+      this.item,
+    )
     this.deleteRequest.emit(this.item)
     this.lineThrough = this.lineThrough ? '' : 'line-through'
   }

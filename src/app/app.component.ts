@@ -7,7 +7,7 @@ import { Component } from '@angular/core'
 })
 export class AppComponent {
   title = 'app works!'
-  currentItem = 'Televisison'
+  currentItem = 'Televisison item input from parent to child'
   items = ['item1', 'item2', 'item3', 'item4']
 
   addItem(newItem: string) {
