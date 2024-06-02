@@ -32,7 +32,10 @@ import { VoterComponent } from './components/component_interactions/eventEmitter
 import { ItemDetailComponent } from './item-detail/item-detail.component';
 import { ItemOutputComponent } from './item-output/item-output.component';
 import { ItemOutputParentComponent } from './item-output-parent/item-output-parent.component';
-import { InputOutputComponent } from './input-output/input-output.component'
+import { InputOutputComponent } from './input-output/input-output.component';
+import { ZippyBasicComponent } from './zippy-basic/zippy-basic.component';
+import { ZippyMultislotComponent } from './zippy-multislot/zippy-multislot.component';
+import { ExampleZippyComponent } from './example-zippy/example-zippy.component'
 
 @NgModule({
   declarations: [
@@ -64,6 +67,9 @@ import { InputOutputComponent } from './input-output/input-output.component'
     ItemOutputComponent,
     ItemOutputParentComponent,
     InputOutputComponent,
+    ZippyBasicComponent,
+    ZippyMultislotComponent,
+    ExampleZippyComponent,
   ],
   imports: [BrowserModule, FormsModule, HttpModule],
   providers: [],
