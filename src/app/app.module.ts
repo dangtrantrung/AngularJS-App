@@ -29,7 +29,9 @@ import { VoterComponent } from './components/component_interactions/eventEmitter
 // import { MissionControlComponent } from './components/component_interactions/observable service/missioncontrol.component'
 // import { AstronautComponent } from './components/component_interactions/observable service/astronaut.component'
 // import { MissionService } from './components/component_interactions/observable service/mission.service';
-import { ItemDetailComponent } from './item-detail/item-detail.component'
+import { ItemDetailComponent } from './item-detail/item-detail.component';
+import { ItemOutputComponent } from './item-output/item-output.component';
+import { ItemOutputParentComponent } from './item-output-parent/item-output-parent.component'
 
 @NgModule({
   declarations: [
@@ -58,6 +60,8 @@ import { ItemDetailComponent } from './item-detail/item-detail.component'
     // AstronautComponent,
     // MissionService,
     ItemDetailComponent,
+    ItemOutputComponent,
+    ItemOutputParentComponent,
   ],
   imports: [BrowserModule, FormsModule, HttpModule],
   providers: [],
