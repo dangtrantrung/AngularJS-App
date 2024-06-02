@@ -21,14 +21,15 @@ import { VersionParentComponent } from './components/component_interactions/impl
 import { VesrionChildComponent } from './components/component_interactions/implement Onchanges/version-child.component'
 import { VoteTakerComponent } from './components/component_interactions/eventEmitter/vote-taker.component'
 import { VoterComponent } from './components/component_interactions/eventEmitter/voter.component'
-import {
-  CountdownLocalVarParentComponent,
-  CountdownViewChildParentComponent,
-} from './components/component_interactions/countdown_timer/countdown-parent.component'
-import { CountdownTimerComponent } from './components/component_interactions/countdown_timer/countdown-timer.component'
-import { MissionControlComponent } from './components/component_interactions/observable service/missioncontrol.component'
-import { AstronautComponent } from './components/component_interactions/observable service/astronaut.component'
-import { MissionService } from './components/component_interactions/observable service/mission.service'
+// import {
+//   CountdownLocalVarParentComponent,
+//   CountdownViewChildParentComponent,
+// } from './components/component_interactions/countdown_timer/countdown-parent.component'
+// import { CountdownTimerComponent } from './components/component_interactions/countdown_timer/countdown-timer.component'
+// import { MissionControlComponent } from './components/component_interactions/observable service/missioncontrol.component'
+// import { AstronautComponent } from './components/component_interactions/observable service/astronaut.component'
+// import { MissionService } from './components/component_interactions/observable service/mission.service';
+import { ItemDetailComponent } from './item-detail/item-detail.component'
 
 @NgModule({
   declarations: [
@@ -50,12 +51,13 @@ import { MissionService } from './components/component_interactions/observable s
     VesrionChildComponent,
     VoteTakerComponent,
     VoterComponent,
-    CountdownTimerComponent,
-    CountdownLocalVarParentComponent,
-    CountdownViewChildParentComponent,
-    MissionControlComponent,
-    AstronautComponent,
-    MissionService,
+    // CountdownTimerComponent,
+    // CountdownLocalVarParentComponent,
+    // CountdownViewChildParentComponent,
+    // MissionControlComponent,
+    // AstronautComponent,
+    // MissionService,
+    ItemDetailComponent,
   ],
   imports: [BrowserModule, FormsModule, HttpModule],
   providers: [],
