@@ -13,4 +13,7 @@ export class AppComponent {
   addItem(newItem: string) {
     this.items.push(newItem)
   }
+  crossOffItem(item: string) {
+    console.warn(`Parent says: crossing off ${item}`)
+  }
 }

@@ -31,7 +31,8 @@ import { VoterComponent } from './components/component_interactions/eventEmitter
 // import { MissionService } from './components/component_interactions/observable service/mission.service';
 import { ItemDetailComponent } from './item-detail/item-detail.component';
 import { ItemOutputComponent } from './item-output/item-output.component';
-import { ItemOutputParentComponent } from './item-output-parent/item-output-parent.component'
+import { ItemOutputParentComponent } from './item-output-parent/item-output-parent.component';
+import { InputOutputComponent } from './input-output/input-output.component'
 
 @NgModule({
   declarations: [
@@ -62,6 +63,7 @@ import { ItemOutputParentComponent } from './item-output-parent/item-output-pare
     ItemDetailComponent,
     ItemOutputComponent,
     ItemOutputParentComponent,
+    InputOutputComponent,
   ],
   imports: [BrowserModule, FormsModule, HttpModule],
   providers: [],
