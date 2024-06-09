@@ -75,15 +75,15 @@ import { AdDirective } from './dynamic-component-loader/ad.directive'
     ZippyBasicComponent,
     ZippyMultislotComponent,
     ExampleZippyComponent,
-    AdBannerComponent,
-    HeroJobAdComponent,
-    HeroProfileComponent,
-    AdDirective,
+    // AdBannerComponent,
+    // HeroJobAdComponent,
+    // HeroProfileComponent,
+    // AdDirective,
   ],
   imports: [BrowserModule, FormsModule, HttpModule],
-  providers: [AdService],
+  providers: [],
   // #docregion entry-components
-  entryComponents: [HeroJobAdComponent, HeroProfileComponent],
+  // entryComponents: [HeroJobAdComponent, HeroProfileComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -7,7 +7,7 @@ import { AdService } from './dynamic-component-loader/ad.service'
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'app works!'
   currentItem = 'Televisison item input from parent to child'
   items = ['item1', 'item2', 'item3', 'item4']
@@ -19,10 +19,14 @@ export class AppComponent implements OnInit {
     console.warn(`Parent says: crossing off ${item}`)
   }
 
-  ads: AdItem[]
-  constructor(private adService: AdService) {}
+  // ads: AdItem[]
+  // constructor(private adService: AdService) {}
 
-  ngOnInit() {
-    this.ads = this.adService.getAds()
-  }
+  // ngOnInit() {
+  //   this.ads = this.adService.getAds()
+  // }
+  // Interpolation
+  titleInterpolation = 'Interpolation'
+  currentCustomer = 'Maria'
+  itemImageUrl = './assets/image.png'
 }

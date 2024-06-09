@@ -8,6 +8,14 @@
     color: black;
 }
 
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 220px;
+    height: 220px;
+}
+
 .job-ad {
     border: 1px solid gray;
     padding: 5px;
