@@ -42,6 +42,7 @@ import { HeroProfileComponent } from './dynamic-component-loader/hero-profile.co
 import { AdService } from './dynamic-component-loader/ad.service'
 import { AdDirective } from './dynamic-component-loader/ad.directive'
 import { NavBarComponent } from './nav-bar.component'
+import { AppNameComponent } from './name-collision.component'
 
 @NgModule({
   declarations: [
@@ -81,6 +82,7 @@ import { NavBarComponent } from './nav-bar.component'
     // HeroProfileComponent,
     // AdDirective,
     NavBarComponent,
+    AppNameComponent,
   ],
   imports: [BrowserModule, FormsModule, HttpModule],
   providers: [],
