@@ -1,9 +1,9 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
+/src/bootstrap-5.0.2-dist
 
 # compiled output
 /dist
 /tmp
-
 # dependencies
 /node_modules
 
