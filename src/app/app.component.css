@@ -29,3 +29,12 @@ img {
 .ad-banner {
     width: 400px;
 }
+
+.foo {
+    color: blue;
+    text-decoration-color: greenyellow;
+}
+
+.bar {
+    background-color: aqua;
+}
