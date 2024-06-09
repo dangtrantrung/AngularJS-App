@@ -41,6 +41,7 @@ import { HeroJobAdComponent } from './dynamic-component-loader/hero-job-ad.compo
 import { HeroProfileComponent } from './dynamic-component-loader/hero-profile.component'
 import { AdService } from './dynamic-component-loader/ad.service'
 import { AdDirective } from './dynamic-component-loader/ad.directive'
+import { NavBarComponent } from './nav-bar.component'
 
 @NgModule({
   declarations: [
@@ -79,6 +80,7 @@ import { AdDirective } from './dynamic-component-loader/ad.directive'
     // HeroJobAdComponent,
     // HeroProfileComponent,
     // AdDirective,
+    NavBarComponent,
   ],
   imports: [BrowserModule, FormsModule, HttpModule],
   providers: [],
