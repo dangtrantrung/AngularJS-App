@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
 import { FormsModule } from '@angular/forms'
 import { HttpModule } from '@angular/http'
-
 import { AppComponent } from './app.component'
 import { ComponentOverviewByCliComponent } from './component-overview-by-cli/component-overview-by-cli.component'
 import { ComponentByManualComponent } from './component-by-manual/component-by-manual.component'
@@ -43,6 +42,7 @@ import { AdService } from './dynamic-component-loader/ad.service'
 import { AdDirective } from './dynamic-component-loader/ad.directive'
 import { NavBarComponent } from './nav-bar.component'
 import { AppNameComponent } from './name-collision.component'
+import { AppBootstrapComponent } from './bootstrap.component'
 
 @NgModule({
   declarations: [
@@ -83,6 +83,7 @@ import { AppNameComponent } from './name-collision.component'
     // AdDirective,
     NavBarComponent,
     AppNameComponent,
+    AppBootstrapComponent,
   ],
   imports: [BrowserModule, FormsModule, HttpModule],
   providers: [],

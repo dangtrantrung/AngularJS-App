@@ -11,19 +11,26 @@ import { Component } from '@angular/core'
         <li *ngFor="let customer of customers">{{ customer.value }}</li>
       </ul>
       <!-- <button type="button" [disabled]="isUnchanged" (click)="setState()"> -->
-      <button type="button" (click)="setState()">
+      <button
+        class="classNamebtn"
+        type="button"
+        (click)="setStateandCSSclass()"
+      >
         Disabled Button
       </button>
       <p>{{ isUnchanged }}</p>
     </div>
   `,
-  // imports: [NgFor]
+  styleUrls: ['./app.component.css'],
+   // imports: [NgFor]
 })
 export class AppNameComponent {
   customers = [{ value: 'Ebony' }, { value: 'Chiho' }]
   customer = 'Padma'
   isUnchanged = false
-  setState() {
+  classNamebtn = 'primary'
+  setStateandCSSclass() {
     this.isUnchanged = this.isUnchanged ? false : true
+    this.classNamebtn = this.classNamebtn ? 'primary' : 'danger'
   }
 }
