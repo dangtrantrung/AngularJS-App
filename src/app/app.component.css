@@ -9,6 +9,26 @@
     color: black;
 }
 
+.saveable {
+    background-color: rgb(234, 153, 60);
+    color: rgb(87, 207, 69);
+}
+
+.special {
+    border: 1px solid gray;
+    padding: 5px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+    background-color: lightgreen;
+    color: rgb(227, 135, 135);
+}
+
+.modified {
+    background-color: rgb(88, 92, 219);
+    color: rgb(237, 63, 200);
+}
+
 img {
     border: 1px solid #ddd;
     border-radius: 4px;

@@ -25,6 +25,13 @@
 <p>----------------------------------</p>
 <!--work because *ngIf directive make the span become parent element and input is child element, for ref3 variable couls ref from parent to child -->
 <p>----------------------------------</p>
+<!-- toggle the "special" class on/off with a property -->
+<div [ngClass]="isSpecial ? 'special' : ''">This div is special</div>
+<p>----------------------------------</p>
+<div [ngClass]="currentClasses">
+    This div is initially saveable, unchanged, and special.
+</div>
+<p>----------------------------------</p>
 
 <app-birthday-pipe-chaining></app-birthday-pipe-chaining>
 <p>----------------------------------</p>

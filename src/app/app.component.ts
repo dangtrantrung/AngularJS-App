@@ -2,6 +2,8 @@ import { Component, Directive, OnInit } from '@angular/core'
 import { AdItem } from './dynamic-component-loader/ad-item'
 import { AdService } from './dynamic-component-loader/ad.service'
 import { Item } from './Item'
+import { CommonModule } from '@angular/common'
+import { FormsModule } from '@angular/forms'
 
 @Component({
   selector: 'app-root',
@@ -19,7 +21,9 @@ export class AppComponent {
   crossOffItem(item: string) {
     console.warn(`Parent says: crossing off ${item}`)
   }
-
+  ngOnInit() {
+    this.setCurrentClasses()
+  }
   // ads: AdItem[]
   // constructor(private adService: AdService) {}
 
@@ -62,5 +66,19 @@ export class AppComponent {
 
   callPhone(phone1: number) {
     console.warn(`call to phone number ${phone1}`)
+  }
+  // Built-in directives
+  isSpecial = true
+  canSave = false
+  isUnchanged = false
+  currentClasses = {}
+  /* . . . */
+  setCurrentClasses() {
+    // CSS classes: added/removed per current state of component properties
+    this.currentClasses = {
+      saveable: this.canSave,
+      modified: !this.isUnchanged,
+      special: !this.isSpecial,
+    }
   }
 }
