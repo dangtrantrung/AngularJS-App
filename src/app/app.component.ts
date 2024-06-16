@@ -23,6 +23,7 @@ export class AppComponent {
   }
   ngOnInit() {
     this.setCurrentClasses()
+    this.setCurrentStyles()
   }
   // ads: AdItem[]
   // constructor(private adService: AdService) {}
@@ -79,6 +80,16 @@ export class AppComponent {
       saveable: this.canSave,
       modified: !this.isUnchanged,
       special: !this.isSpecial,
+    }
+  }
+  currentStyles = {}
+  /* . . . */
+  setCurrentStyles() {
+    // CSS styles: set per current state of component properties
+    this.currentStyles = {
+      'font-style': this.canSave ? 'italic' : 'normal',
+      'font-weight': !this.isUnchanged ? 'bold' : 'normal',
+      'font-size': this.isSpecial ? '46px' : '12px',
     }
   }
 }
