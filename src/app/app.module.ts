@@ -45,7 +45,8 @@ import { AppNameComponent } from './name-collision.component'
 import { AppBootstrapComponent } from './bootstrap.component';
 import { SizerComponent } from './sizer/sizer.component';
 import { PipeComponentComponent } from './pipe-component/pipe-component.component';
-import { BirthdayFormattingComponent } from './birthday-formatting/birthday-formatting.component'
+import { BirthdayFormattingComponent } from './birthday-formatting/birthday-formatting.component';
+import { BirthdayPipeChainingComponent } from './birthday-pipe-chaining/birthday-pipe-chaining.component'
 
 @NgModule({
   declarations: [
@@ -90,6 +91,7 @@ import { BirthdayFormattingComponent } from './birthday-formatting/birthday-form
     SizerComponent,
     PipeComponentComponent,
     BirthdayFormattingComponent,
+    BirthdayPipeChainingComponent,
   ],
   imports: [BrowserModule, FormsModule, HttpModule],
   providers: [],
