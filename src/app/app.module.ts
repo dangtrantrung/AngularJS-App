@@ -46,7 +46,8 @@ import { AppBootstrapComponent } from './bootstrap.component';
 import { SizerComponent } from './sizer/sizer.component';
 import { PipeComponentComponent } from './pipe-component/pipe-component.component';
 import { BirthdayFormattingComponent } from './birthday-formatting/birthday-formatting.component';
-import { BirthdayPipeChainingComponent } from './birthday-pipe-chaining/birthday-pipe-chaining.component'
+import { BirthdayPipeChainingComponent } from './birthday-pipe-chaining/birthday-pipe-chaining.component';
+import { HighlightDirective } from './highlight.directive'
 
 @NgModule({
   declarations: [
@@ -92,6 +93,7 @@ import { BirthdayPipeChainingComponent } from './birthday-pipe-chaining/birthday
     PipeComponentComponent,
     BirthdayFormattingComponent,
     BirthdayPipeChainingComponent,
+    HighlightDirective,
   ],
   imports: [BrowserModule, FormsModule, HttpModule],
   providers: [],
