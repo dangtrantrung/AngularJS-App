@@ -5,6 +5,15 @@
     <add-banner [ads]="ads"></add-banner>
 </div> -->
 <!-- Template reference variable -->
+<div *ngFor="let hero of heroes; let i = index; let odd = odd; trackBy: trackById" [class.odd]="odd">
+    ({{ i }}) {{ hero.name }}
+</div>
+
+<!-- <ng-template ngFor let-hero [ngForOf]="heroes" let-i="index" let-odd="odd" [ngForTrackBy]="trackById">
+    <div [class.odd]="odd">({{ i }}) {{ hero.name }}</div>
+</ng-template> -->
+<p>----------------------------------</p>
+
 <h1>My First Attribute Directive</h1>
 
 <h2>Pick a highlight color</h2>
