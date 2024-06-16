@@ -51,7 +51,7 @@ export class AppComponent {
     const evtMsg = event
       ? 'Event target is: ' + (event.target as HTMLElement).className
       : ''
-    alert('Click me.' + evtMsg)
+    alert('Clicked button. Classname of DOM element is: ' + evtMsg)
   }
   getValue(event: Event): string {
     return (event.target as HTMLInputElement).value
