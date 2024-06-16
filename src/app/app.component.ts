@@ -49,7 +49,7 @@ export class AppComponent {
   }
   onClickMe(event?: MouseEvent) {
     const evtMsg = event
-      ? 'Event target is' + (event.target as HTMLElement).className
+      ? 'Event target is: ' + (event.target as HTMLElement).className
       : ''
     alert('Click me.' + evtMsg)
   }

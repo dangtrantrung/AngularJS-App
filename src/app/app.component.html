@@ -17,6 +17,12 @@
   </button> {{ clickMessage }}
 </div>
 <div class="group">
+    <h3>Target Event</h3>
+    <button type="button" (click)="onClickMe($event)" class="btn btn-danger">
+    Click Me Classname
+  </button>
+</div>
+<div class="group">
     <h3>$event and event handling statements</h3>
     <h4>Result:{{ currentItem1.name }}</h4>
 
