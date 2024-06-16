@@ -12,7 +12,19 @@
 <!-- phone refers to the input element; pass its `value` to an event handler -->
 <button type="button" (click)="callPhone(phone.value)">Call</button>
 <p>----------------------------------</p>
+<input #ref1 type="text" [(ngModel)]="firstExample" />
+<span *ngIf="true">Value: {{ ref1.value }}</span>
+<p>----------------------------------</p>
+<input *ngIf="true" #ref2 type="text" [(ngModel)]="secondExample" />
+<span>Value: {{ ref2?.value }}</span>
+<p>----------------------------------</p>
 
+<!-- doesn't work -->
+<input #ref3 type="text" [(ngModel)]="thirdExample" />
+<span *ngIf="true">Value: {{ ref3?.value }}</span>
+<p>----------------------------------</p>
+
+<!--work because *ngIf directive make the span become parent element and input is child element, for ref3 variable couls ref from parent to child -->
 <app-birthday-pipe-chaining></app-birthday-pipe-chaining>
 <p>----------------------------------</p>
 
