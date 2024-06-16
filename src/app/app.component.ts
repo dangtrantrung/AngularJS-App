@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core'
+import { Component, Directive, OnInit } from '@angular/core'
 import { AdItem } from './dynamic-component-loader/ad-item'
 import { AdService } from './dynamic-component-loader/ad.service'
+import { Item } from './Item'
 
 @Component({
   selector: 'app-root',
@@ -29,4 +30,30 @@ export class AppComponent {
   titleInterpolation = 'Interpolation'
   currentCustomer = 'Maria'
   itemImageUrl = './assets/image.png'
+
+  //Event binding & Template statement & Directive
+  clickMessage = ''
+  onSave(event?: MouseEvent) {
+    const evtMsg = event
+      ? 'Event target is ' + (event.target as HTMLElement).textContent
+      : ''
+    alert('Saved.' + evtMsg)
+    if (event) {
+      event.stopPropagation()
+    }
+  }
+
+  currentItem1 = { name: 'teapot' }
+  deleteItem(item: Item) {
+    alert(`Delete the ${item.name}`)
+  }
+  onClickMe(event?: MouseEvent) {
+    const evtMsg = event
+      ? 'Event target is' + (event.target as HTMLElement).className
+      : ''
+    alert('Click me.' + evtMsg)
+  }
+  getValue(event: Event): string {
+    return (event.target as HTMLInputElement).value
+  }
 }

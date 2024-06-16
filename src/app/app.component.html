@@ -4,6 +4,25 @@
 <!-- <div>
     <add-banner [ads]="ads"></add-banner>
 </div> -->
+<h1 id="event binding">
+    Event binding
+</h1>
+<div class="group">
+    <h3>Target Event</h3>
+    <button type="button" (click)="onSave($event)">Save</button>
+    <button type="button" on-enter="onSave()">on-click Save</button>
+    <h4>MyClick is an event on the Custom clickDirective</h4>
+    <button type="button" (myClick)="clickMessage = $event" clickable>
+    click with MyClick
+  </button> {{ clickMessage }}
+</div>
+<div class="group">
+    <h3>$event and event handling statements</h3>
+    <h4>Result:{{ currentItem1.name }}</h4>
+
+    <input [value]="currentItem1.name" (input)="currentItem1.name = getValue($event)" /> without NgModel
+</div>
+<p>----------------------------------</p>
 <app-bootstrap></app-bootstrap>
 <app-name-collision></app-name-collision>
 <app-nav-bar></app-nav-bar>
@@ -11,7 +30,7 @@
 
 <h2>Interpolation: {{ titleInterpolation }}</h2>
 <p>curent Customer: {{ currentCustomer }}</p>
-<div><img alt="item" src="{{ itemImageUrl }} " /></div>
+<div><img alt=" item " src="{{ itemImageUrl }} " /></div>
 
 <p>----------------------------------</p>
 <app-zippy-multislot>
@@ -64,7 +83,7 @@
 <app-component-by-manual></app-component-by-manual>
 <app-parent></app-parent>
 <app-child></app-child>
-<p style="color: green;">I am green paragraph</p>
+<p style="color: green; ">I am green paragraph</p>
 <p>I am green paragraph</p>
 
 <app-emulated></app-emulated>
