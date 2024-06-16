@@ -4,6 +4,13 @@
 <!-- <div>
     <add-banner [ads]="ads"></add-banner>
 </div> -->
+
+<app-sizer [(size)]="fontSizePx"></app-sizer>
+<div [style.font-size.px]="fontSizePx">
+    Resizable Text
+</div>
+<p>----------------------------------</p>
+
 <h1 id="event binding">
     Event binding
 </h1>

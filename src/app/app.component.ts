@@ -56,4 +56,7 @@ export class AppComponent {
   getValue(event: Event): string {
     return (event.target as HTMLInputElement).value
   }
+  // Two-way binding
+  title1 = 'Two-way binding'
+  fontSizePx = 16
 }

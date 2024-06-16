@@ -42,7 +42,8 @@ import { AdService } from './dynamic-component-loader/ad.service'
 import { AdDirective } from './dynamic-component-loader/ad.directive'
 import { NavBarComponent } from './nav-bar.component'
 import { AppNameComponent } from './name-collision.component'
-import { AppBootstrapComponent } from './bootstrap.component'
+import { AppBootstrapComponent } from './bootstrap.component';
+import { SizerComponent } from './sizer/sizer.component'
 
 @NgModule({
   declarations: [
@@ -84,6 +85,7 @@ import { AppBootstrapComponent } from './bootstrap.component'
     NavBarComponent,
     AppNameComponent,
     AppBootstrapComponent,
+    SizerComponent,
   ],
   imports: [BrowserModule, FormsModule, HttpModule],
   providers: [],
