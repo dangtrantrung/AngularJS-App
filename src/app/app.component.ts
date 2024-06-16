@@ -92,4 +92,5 @@ export class AppComponent {
       'font-size': this.isSpecial ? '46px' : '12px',
     }
   }
+  color = ''
 }
