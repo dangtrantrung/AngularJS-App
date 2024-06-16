@@ -59,4 +59,8 @@ export class AppComponent {
   // Two-way binding
   title1 = 'Two-way binding'
   fontSizePx = 16
+
+  callPhone(phone1: number) {
+    console.warn(`call to phone number ${phone1}`)
+  }
 }
