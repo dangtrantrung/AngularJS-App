@@ -43,7 +43,9 @@ import { AdDirective } from './dynamic-component-loader/ad.directive'
 import { NavBarComponent } from './nav-bar.component'
 import { AppNameComponent } from './name-collision.component'
 import { AppBootstrapComponent } from './bootstrap.component';
-import { SizerComponent } from './sizer/sizer.component'
+import { SizerComponent } from './sizer/sizer.component';
+import { PipeComponentComponent } from './pipe-component/pipe-component.component';
+import { BirthdayFormattingComponent } from './birthday-formatting/birthday-formatting.component'
 
 @NgModule({
   declarations: [
@@ -86,6 +88,8 @@ import { SizerComponent } from './sizer/sizer.component'
     AppNameComponent,
     AppBootstrapComponent,
     SizerComponent,
+    PipeComponentComponent,
+    BirthdayFormattingComponent,
   ],
   imports: [BrowserModule, FormsModule, HttpModule],
   providers: [],
