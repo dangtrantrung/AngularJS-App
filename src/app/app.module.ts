@@ -42,12 +42,18 @@ import { AdService } from './dynamic-component-loader/ad.service'
 import { AdDirective } from './dynamic-component-loader/ad.directive'
 import { NavBarComponent } from './nav-bar.component'
 import { AppNameComponent } from './name-collision.component'
-import { AppBootstrapComponent } from './bootstrap.component';
-import { SizerComponent } from './sizer/sizer.component';
-import { PipeComponentComponent } from './pipe-component/pipe-component.component';
-import { BirthdayFormattingComponent } from './birthday-formatting/birthday-formatting.component';
-import { BirthdayPipeChainingComponent } from './birthday-pipe-chaining/birthday-pipe-chaining.component';
+import { AppBootstrapComponent } from './bootstrap.component'
+import { SizerComponent } from './sizer/sizer.component'
+import { PipeComponentComponent } from './pipe-component/pipe-component.component'
+import { BirthdayFormattingComponent } from './birthday-formatting/birthday-formatting.component'
+import { BirthdayPipeChainingComponent } from './birthday-pipe-chaining/birthday-pipe-chaining.component'
 import { HighlightDirective } from './highlight.directive'
+import { HeroListComponent } from './heroes/hero-list/hero-list.component'
+import { HeroBiosComponent } from './heroes/hero-bio/hero-bio.component'
+import { HeroBioComponent } from './heroes/hero-bio1/hero-bio1.component'
+import { BackendService } from './backend.service'
+import { HeroService } from './heroes/hero.service'
+import { Logger } from './logger.service'
 
 @NgModule({
   declarations: [
@@ -94,9 +100,12 @@ import { HighlightDirective } from './highlight.directive'
     BirthdayFormattingComponent,
     BirthdayPipeChainingComponent,
     HighlightDirective,
+    HeroListComponent,
+    HeroBiosComponent,
+    HeroBioComponent,
   ],
   imports: [BrowserModule, FormsModule, HttpModule],
-  providers: [],
+  providers: [BackendService, HeroService, Logger],
   // #docregion entry-components
   // entryComponents: [HeroJobAdComponent, HeroProfileComponent],
   bootstrap: [AppComponent],

@@ -5,6 +5,8 @@
     <add-banner [ads]="ads"></add-banner>
 </div> -->
 <!-- Template reference variable -->
+<app-hero-bios></app-hero-bios>
+<p>----------------------------------</p>
 <div *ngFor="let hero of heroes; let i = index; let odd = odd; trackBy: trackById" [class.odd]="odd">
     ({{ i }}) {{ hero.name }}
 </div>
